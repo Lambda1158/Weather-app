@@ -1,0 +1,36 @@
+.searchbar{
+   background-color:grey;
+   border-radius: 30%;
+   transform: translate(-50%,-50);
+   height: 60px;
+   border-radius: 40px;
+   padding: 10px;
+}
+.searchbar:hover>.searchtxt{
+    width: 240px;
+    padding: 0 6px;
+}
+
+.searchtxt{
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0%;
+    color: white;
+    font-size: 16px;
+    transition: 0.4s;
+    line-height: 40px;
+    width: 0px;
+}
+
+
+.searchboton{
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}

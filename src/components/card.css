@@ -1,0 +1,39 @@
+.carta{
+    margin: 20px;
+    width: 18rem;
+    background-color: rgba(27, 27, 27, 0.753);
+    border-radius: 2%;
+}
+.closeIcon{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 1rem;
+    margin-top: 1rem;
+    
+}
+.titulo{
+    color: white;
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+.title{
+
+}
+.elementos{
+    display: flex;
+    justify-content: space-around;
+}
+.texto{
+    color: white;
+}
+.foto{
+
+}
+.foto:hover{
+    display:ruby;
+}
+.carta:hover{
+    box-shadow: 5px 5px 5px 0px rgba(133, 133, 133, 0.5);
+}
