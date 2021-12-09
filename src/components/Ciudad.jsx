@@ -1,5 +1,6 @@
 import React, { useState,useEffect } from "react";
 import { useParams } from 'react-router';
+import "./ciudad.css"
 const apiKey = '4ae2636d8dfbdc3044bede63951a019b';
 
 
@@ -40,26 +41,42 @@ export default function Ciudad() {
         //aca tendriamos que haber llamado a la API
         useEffect(() => {
             getCityById(ciudadId)
-          },[]);
+          },[ciudadId]);
         
           
     
         return (<div>
             { 
                 city ? 
-                <div >
-                    <div >
-                        <h2>{city.name}</h2>
-                        <div >
-                            <div>Temperatura: {city.city.temp} ºC</div>
-                            <div>Clima: {city.city.weather}</div>
-                            <div>Viento: {city.city.wind} km/h</div>
-                            <div>Cantidad de nubes: {city.city.clouds}</div>
-                            <div>Latitud: {city.city.latitud}º</div>
-                            <div>Longitud: {city.city.longitud}º</div>
-                        </div>
-                    </div>
+                    // <div className="conteiner" >
+                    //     <h2>{city.city.name}</h2>
+                    //         <p>Temperatura: {city.city.temp} ºC</p>
+                    //         <p>Clima: {city.city.weather}</p>
+                    //         <p>Viento: {city.city.wind} km/h</p>
+                    //         <p>Cantidad de nubes: {city.city.clouds}</p>
+                    //         <p>Latitud: {city.city.latitud}º</p>
+                    //         <p>Longitud: {city.city.longitud}º</p>
+                    // </div>
+                <div className="ciudad"> 
+                <div class="card text-center">
+                <div class="card-header ">
+                Mas Detalles
                 </div>
+                <div class="card-body">
+                <h5 class="card-title">{city.city.name}</h5>
+                <p class="card-text">Temperatura {city.city.temp} ºC</p>
+                <p class="card-text">Vientos{city.city.wind}</p>
+                <p class="card-text">Cantidad de nubes: {city.city.clouds}</p>
+                <p class="card-text">Latitud: {city.city.latitud}º</p>
+                <p class="card-text">Longitud: {city.city.longitud}º</p>
+                
+                <img src={`http://openweathermap.org/img/wn/${city.city.img}@2x.png`}/>
+                </div>
+                <div class="card-footer text-muted">
+                Weather App
+                </div>
+                </div>
+                  </div>
                 : 
                 <div> no encontre la ciudad </div>}
         </div>)

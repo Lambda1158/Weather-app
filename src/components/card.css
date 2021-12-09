@@ -3,6 +3,7 @@
     width: 18rem;
     background-color: rgba(27, 27, 27, 0.753);
     border-radius: 2%;
+    height: 14rem;
 }
 .closeIcon{
     display: flex;

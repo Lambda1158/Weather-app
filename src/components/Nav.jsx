@@ -4,17 +4,15 @@ import { Link } from 'react-router-dom';
 import "./nav.css"
 export default function Nav({onSearch}){
     return(
-        <nav className="nav">
-            <div>
+        <nav class="navbar navbar-dark bg-dark">
             <Link to='/'>
-            <span>
-            Home con foto
-            </span>
+            <h3>
+            Home
+            </h3>
             </Link>
             <Link to="/about">
-                <span>about</span>
+                <h3>About</h3>
             </Link>
-            </div>
             <SearchBar onSearch={onSearch}/>
         </nav>
     )

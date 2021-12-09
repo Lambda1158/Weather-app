@@ -1,0 +1,13 @@
+.ciudad{
+    margin: 20px;
+    width: 26rem;
+    background-color: rgba(27, 27, 27, 0.753);
+    border-radius: 2%;
+
+}
+h2{
+    color: white;
+}
+p{
+    color:white,
+}

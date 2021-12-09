@@ -51,6 +51,7 @@ export default function App() {
   return (
     <div className="App">
     <Nav onSearch={onSearch} />
+    <div className="mundo">
             <Cards
               cities={cities}
               onClose={onClose}
@@ -69,6 +70,7 @@ export default function App() {
         <Ciudad onFilter={onFilter}/>
       </Route>  
     </Switch>
+    </div>
     </div>
   );
 }
